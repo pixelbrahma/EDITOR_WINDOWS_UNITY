@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -219,8 +220,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -407,11 +409,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9055115984532082664, guid: f9c84bdbf78351544a9176fbf7f196ed,
-        type: 3}
-      propertyPath: m_Name
-      value: Preset Object
-      objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082580, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -467,16 +464,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9055115984532082667, guid: f9c84bdbf78351544a9176fbf7f196ed,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -2222346464153789849, guid: 8bf8213d4ffb24d4688c46ae081b07da,
-        type: 3}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
@@ -486,17 +477,17 @@ PrefabInstance:
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[0].objectName
-      value: Test Preset
+      value: Preset1
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: currentlyEditing.objectName
-      value: 
+      value: Preset3
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[0].color.r
-      value: 0.11012435
+      value: 0.14320946
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
@@ -511,7 +502,7 @@ PrefabInstance:
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: currentlyEditing.color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
@@ -526,12 +517,12 @@ PrefabInstance:
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[0].size.x
-      value: 1.94
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: currentlyEditing.size.x
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
@@ -541,12 +532,12 @@ PrefabInstance:
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: currentlyEditing.size.y
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[0].size.z
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
@@ -561,7 +552,7 @@ PrefabInstance:
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: currentlyEditing.animationSpeed
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
@@ -571,27 +562,27 @@ PrefabInstance:
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: currentlyEditing.isAnimating
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[1].objectName
-      value: Another Preset
+      value: Preset2
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[1].size.x
-      value: 0.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[1].size.y
-      value: 0.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[1].size.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
@@ -601,7 +592,7 @@ PrefabInstance:
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[1].rotation.x
-      value: 4.53
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
@@ -611,7 +602,7 @@ PrefabInstance:
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[1].rotation.y
-      value: 9.37
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
@@ -621,27 +612,27 @@ PrefabInstance:
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[1].animationSpeed
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[1].color.r
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[1].color.g
-      value: 0.0141509175
+      value: 0.0323627
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[1].color.b
-      value: 0.0141509175
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: currentlyEditing.color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
@@ -651,13 +642,174 @@ PrefabInstance:
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: presets.Array.data[1].rotation.z
-      value: 0.81
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
         type: 3}
       propertyPath: currentlyEditing.rotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[2].objectName
+      value: Preset3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[2].size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[2].size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[2].size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[2].isAnimating
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[3].objectName
+      value: Unnamed Preset
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[3].size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[3].size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[3].size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[3].isAnimating
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[4].objectName
+      value: Unnamed Preset
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[4].size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[4].size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[4].size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[4].isAnimating
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[5].objectName
+      value: Unnamed Preset
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[5].size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[5].size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[5].size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[5].isAnimating
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[6].objectName
+      value: Unnamed Preset
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[6].size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[6].size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[6].size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[6].isAnimating
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[2].color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[2].color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[2].color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[2].animationSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082582, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: presets.Array.data[2].color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082664, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: m_Name
+      value: Preset Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055115984532082667, guid: f9c84bdbf78351544a9176fbf7f196ed,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2222346464153789849, guid: 8bf8213d4ffb24d4688c46ae081b07da,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 9055115984532082665, guid: f9c84bdbf78351544a9176fbf7f196ed, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f9c84bdbf78351544a9176fbf7f196ed, type: 3}
